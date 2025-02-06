@@ -25,8 +25,6 @@ packages:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
     dev: true
-    engines:
-      node: '>=6.0.0'
     resolution:
       integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==
   /@babel/code-frame/7.10.4:
@@ -75,8 +73,6 @@ packages:
       semver: 5.7.2
       source-map: 0.5.7
     dev: true
-    engines:
-      node: '>=6.9.0'
     resolution:
       integrity: sha512-0qXcZYKZp3/6N2jKYVxZv0aNCsxTSVCiK72DTiTYZAu7sjg73W0/aynWjMbiGd87EQL4WyA8reiJVh92AVla9g==
   /@babel/core/7.26.0:
@@ -97,8 +93,6 @@ packages:
       json5: 2.2.3
       semver: 6.3.1
     dev: true
-    engines:
-      node: '>=6.9.0'
     resolution:
       integrity: sha512-i1SLeK+DzNnQ3LL/CswPCa/E5u4lh1k6IAEphON8F+cXt0t9euTshDru0q7/IqMa1PMPz5RnHuHscF8/ZJsStg==
   /@babel/generator/7.26.2:
@@ -108,15 +102,11 @@ packages:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
       jsesc: 3.0.2
-    engines:
-      node: '>=6.9.0'
     resolution:
       integrity: sha512-zevQbhbau95nkoxSq3f/DC/SC+EEOUZd3DYqfSkMhY2/wfSeaHV1Ew4vk8e+x8lja31IbyuUa2uQ3JONqKbysw==
   /@babel/helper-annotate-as-pure/7.25.9:
     dependencies:
       '@babel/types': 7.26.0
-    engines:
-      node: '>=6.9.0'
     resolution:
       integrity: sha512-gv7320KBUFJz1RnylIg5WWYPRXKZ884AGkYpgpWW02TH66Dl+HaC1t1CKd0z3R4b6hdYEcmrNZHUmfCP+1u3/g==
   /@babel/helper-builder-binary-assignment-operator-visitor/7.25.9:
@@ -124,8 +114,6 @@ packages:
       '@babel/traverse': 7.25.9
       '@babel/types': 7.26.0
     dev: true
-    engines:
-      node: '>=6.9.0'
     resolution:
       integrity: sha512-C47lC7LIDCnz0h4vai/tpNOI95tCd5ZT3iBt/DBH5lXKHZsyNQv18yf1wIIg2ntiQNgmAvA+DgZ82iW8Qdym8g==
   /@babel/helper-compilation-targets/7.25.9:
@@ -136,8 +124,6 @@ packages:
       lru-cache: 5.1.1
       semver: 6.3.1
     dev: true
-    engines:
-      node: '>=6.9.0'
     resolution:
       integrity: sha512-j9Db8Suy6yV/VHa4qzrj9yZfZxhLWQdVnRlXxmKLYlhWUVB1sB2G5sxuWYXk/whHD9iW76PmNzxZ4UCnTQTVEQ==
   /@babel/helper-create-class-features-plugin/7.25.9_@babel+core@7.12.3:
@@ -151,8 +137,6 @@ packages:
       '@babel/traverse': 7.25.9
       semver: 6.3.1
     dev: true
-    engines:
-      node: '>=6.9.0'
     peerDependencies:
       '@babel/core': ^7.0.0
     resolution:

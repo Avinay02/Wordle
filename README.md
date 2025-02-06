@@ -1,86 +1,57 @@
-The goal of this coding exam is to quickly get you off the ground with **Lists and Keys**.
+-------------------------------------------------------Wordle Game - React Project------------------------------------------------------
 
-### Refer to the image below:
+Description
+This is a React-based Wordle game where players need to guess a 5-letter word within a limited number of attempts. The game provides feedback after each guess by color-coding the letters as follows:
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/multilingual-greetings-output.gif" alt="multilingual-greetings" style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+Green: Correct letter in the correct position.
+Yellow: Correct letter in the wrong position.
+Gray: Incorrect letter (not in the word).
+The game also shows the meaning of the word you're trying to guess, and allows the player to start a new game after winning or losing.
 
-### Design Files
+Features:
+Guess a 5-letter word within 5 attempts.
+The word's meaning is displayed, providing hints to help you guess.
+Color-coded feedback based on the guess.
+Start a new game once the current game ends.
+Steps to Run the Project
 
-<details>
-<summary>Click to view</summary>
+1. Clone the repository:
+bash
+Copy
+git clone https://github.com/your-Avinay02/wordle-game-react.git
+cd wordle-game-react
 
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/multilingual-greetings-lg-output.png)
+2. Install Dependencies:
+Make sure you have Node.js installed. Then, run the following command to install the required dependencies:
 
-</details>
+bash
+Copy
+npm install
+3. Start the Application:
+Run the following command to start the application in development mode:
 
-### Set Up Instructions
+bash
+Copy
+npm start
+After that, open your browser and visit http://localhost:3000 to play the game.
 
-<details>
-<summary>Click to view</summary>
+Features or Enhancements Implemented:
+Game Flow:
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+Players have 5 attempts to guess the word.
+After each guess, feedback is provided using color-coding (green, yellow, gray).
+The game ends when the player either guesses the correct word or runs out of attempts.
+Feedback System:
 
-### Completion Instructions
+After submitting a guess, a color-coded feedback is displayed for each letter in the guessed word.
+Green means the letter is correct and in the correct position, Yellow means it's correct but in the wrong position, and Gray means it's not in the word.
+Word Meaning Display:
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+The meaning of the word to guess is shown below the game board to give a hint.
+New Game Button:
 
-The app must have the following functionalities
+A button is available to start a new game once the current one ends, either in a win or loss scenario.
+Error Handling:
 
-- Initially, the **English** language button should be active and the **English** greeting image should be displayed.
-- When the user clicks on a language button, then the corresponding greeting image should be displayed.
-- The `App` component consists of the `languageGreetingsList`. It consists of a list of image details objects with the following properties in each object
-
-  | Key          | Data Type |
-  | ------------ | --------- |
-  | id           | Number    |
-  | imageUrl     | String    |
-  | buttonText   | String    |
-  | imageAltText | String    |
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instruction is required for the tests to pass**
-
-- The image should have the alt attribute value as the key `imageAltText` from `languageGreetingsList` provided
-
-</details>
-
-### Resources
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #db1c48; width: 150px; padding: 10px; color: black">Hex: #db1c48</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-<div style="background-color: #1e293b; width: 150px; padding: 10px; color: white">Hex: #1e293b</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
+The game provides error messages if the user enters invalid input (not exactly 5 letters or characters that are not letters).
+Feel free to modify and enhance the game to add new features or improve the current ones! Enjoy playing the Wordle game! 😊

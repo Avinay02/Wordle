@@ -41,3 +41,103 @@ h1 {
   height: 100vh;
   background-image: url('https://i.insider.com/61e6dfe704ce6e0018d78b59?width=700');
 }
+
+/* Default styles (Light mode) */
+.app-container {
+  background-color: white;
+  color: black;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.dark .app-container {
+  background-color: #121212;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button.dark-mode-toggle {
+  background-color: #333;
+  color: white;
+  border: 1px solid #444;
+}
+
+button.dark-mode-toggle:hover {
+  background-color: #555;
+}
+
+.dark .button {
+  background-color: #333;
+  color: white;
+}
+
+.meaning {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.dark .meaning {
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.win-heading {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.dark .win-heading {
+  color: #76c7c0;
+}
+
+.dark .loss-cls,
+.dark .won-cls {
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.status {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.dark .status {
+  color: white;
+}
+
+/* Additional Dark Mode Styles */
+.dark .color-explanation {
+  background-color: #444;
+  color: white;
+}
+
+.dark .color-explanation li {
+  background-color: #333;
+}
+
+.dark .color-explanation li strong {
+  color: #ffeb3b;
+}

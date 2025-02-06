@@ -57,6 +57,7 @@ const App = () => {
   const [attempts, setAttempts] = useState([])
   const [gameWon, setGameWon] = useState(false)
   const [gameLoss, setGameLoss] = useState(false)
+  const [darkMode, setDarkMode] = useState(false) // State to manage dark mode
 
   // Function to reset the game and pick a new random word
   const startNewGame = () => {
@@ -74,12 +75,17 @@ const App = () => {
     startNewGame()
   }, [])
 
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode)
+  }
+
   return gameWon || gameLoss ? (
-    <div className="app-container">
+    <div className={`app-container ${darkMode ? 'dark' : ''}`}>
       {gameLoss && (
         <div className="loss-cls">
           <h1>Wordle Game</h1>
-          <h2 className="win-heading">You Loss</h2>
+          <h2 className="win-heading">You Lost</h2>
           {/* Color Explanation */}
           <ColorExplanation />
 
@@ -90,7 +96,7 @@ const App = () => {
       {gameWon && (
         <div className="won-cls">
           <h1>Wordle Game</h1>
-          <h2 className="win-heading">You Won 🎉</h2>
+          <h2 className="win-heading">You Won</h2>
           {/* Color Explanation */}
           <ColorExplanation />
 
@@ -100,8 +106,17 @@ const App = () => {
       )}
     </div>
   ) : (
-    <div className="app-container">
+    <div className={`app-container ${darkMode ? 'dark' : ''}`}>
       <h1>Wordle Game</h1>
+
+      {/* Dark Mode Toggle Button */}
+      <button
+        type="button"
+        className="dark-mode-toggle"
+        onClick={toggleDarkMode}
+      >
+        Toggle Dark Mode
+      </button>
 
       {/* Game Board Component */}
       <GameBoard

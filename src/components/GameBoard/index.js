@@ -1,3 +1,4 @@
+// GameBoard Component (Updated for Dark Mode Styling)
 import {useState} from 'react'
 import './index.css'
 

@@ -14,7 +14,7 @@ const GameBoard = props => {
   } = props
   const [currentGuess, setCurrentGuess] = useState('')
   const [errorMsg, setErrorMsg] = useState('')
-  const [attemptCount, setAttemptCount] = useState(5)
+  const [attemptCount, setAttemptCount] = useState(6)
 
   // Function to evaluate the guess against the target word
   const evaluateGuess = (guess, targetWord) => {
@@ -106,7 +106,7 @@ const GameBoard = props => {
 
       {/* Display total attempts and remaining attempts */}
       <div className="status">
-        <p>Total Attempts: 5</p>
+        <p>Total Attempts: 6</p>
         <p>Remaining Attempts: {attemptCount}</p>
       </div>
     </div>

@@ -26,3 +26,35 @@
 .gray-cls {
   background-color: grey;
 }
+
+
+@media (max-width: 768px) {
+  .color-explanation {
+    margin-top: 20px;
+    padding: 15px; 
+  }
+
+  .color-explanation h3 {
+    font-size: 16px;
+  }
+
+  .color-explanation li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .color-explanation {
+    margin-top: 15px;
+    padding: 10px; 
+  }
+
+  .color-explanation h3 {
+    font-size: 14px; 
+  }
+
+  .color-explanation li {
+    font-size: 12px; 
+    margin: 4px 0; 
+  }
+}

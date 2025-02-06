@@ -110,13 +110,23 @@ const App = () => {
       <h1>Wordle Game</h1>
 
       {/* Dark Mode Toggle Button */}
-      <button
-        type="button"
-        className="dark-mode-toggle"
-        onClick={toggleDarkMode}
-      >
-        Toggle Dark Mode
-      </button>
+      {darkMode ? (
+        <button
+          type="button"
+          className="dark-mode-toggle"
+          onClick={toggleDarkMode}
+        >
+          Toggle Light Mode
+        </button>
+      ) : (
+        <button
+          type="button"
+          className="dark-mode-toggle"
+          onClick={toggleDarkMode}
+        >
+          Toggle Dark Mode
+        </button>
+      )}
 
       {/* Game Board Component */}
       <GameBoard

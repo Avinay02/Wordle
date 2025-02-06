@@ -16,7 +16,6 @@
   cursor: not-allowed;
 }
 
-/* Feedback Grid */
 .feedback {
   margin-top: 20px;
 }
@@ -52,4 +51,90 @@
 .letter.gray {
   background-color: gray;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .gameboard input {
+    padding: 12px;
+    font-size: 14px;
+    margin: 15px 0;
+  }
+
+  .gameboard button {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  .feedback {
+    margin-top: 15px;
+  }
+
+  .guess-feedback {
+    justify-content: center;
+    margin: 5px;
+  }
+
+  .letter {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 4px;
+  }
+
+  .letter.green {
+    background-color: green;
+    color: white;
+  }
+
+  .letter.yellow {
+    background-color: yellow;
+    color: black;
+  }
+
+  .letter.gray {
+    background-color: gray;
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .gameboard input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .gameboard button {
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 90%;
+  }
+
+  .guess-feedback {
+    flex-direction: row;
+    margin: 3px;
+  }
+
+  .letter {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    margin: 3px;
+  }
+
+  .letter.green {
+    background-color: green;
+    color: white;
+  }
+
+  .letter.yellow {
+    background-color: yellow;
+    color: black;
+  }
+
+  .letter.gray {
+    background-color: gray;
+    color: white;
+  }
 }

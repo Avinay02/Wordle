@@ -9,3 +9,21 @@
 .new-game button:hover {
   background-color: #005f6a;
 }
+
+@media (max-width: 768px) {
+  .new-game button {
+    padding: 12px 20px;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-game button {
+    padding: 12px 18px;
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}

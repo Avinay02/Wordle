@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General styling */
+.app-container {
+  background-image: radial-gradient(#ffff00, #ff0000);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.win-heading {
+  font-size: 100px;
+}
+
+.loss-cls {
+  background-size: cover;
+  height: 100vh;
+  background-color: #ff0000;
+}
+.won-cls {
+  background-size: cover;
+  height: 100vh;
+  background-image: url('https://i.insider.com/61e6dfe704ce6e0018d78b59?width=700');
+}

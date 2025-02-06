@@ -1,0 +1,55 @@
+.gameboard input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.gameboard button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.gameboard button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+/* Feedback Grid */
+.feedback {
+  margin-top: 20px;
+}
+
+.guess-feedback {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.letter {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+}
+
+.letter.green {
+  background-color: green;
+  color: white;
+}
+
+.letter.yellow {
+  background-color: yellow;
+  color: black;
+}
+
+.letter.gray {
+  background-color: gray;
+  color: white;
+}

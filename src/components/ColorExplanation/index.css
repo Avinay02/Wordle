@@ -1,0 +1,28 @@
+.color-explanation {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.color-explanation h3 {
+  font-size: 18px;
+}
+
+.color-explanation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.color-explanation li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.green-cls {
+  background-color: green;
+}
+.yellow-cls {
+  background-color: yellow;
+}
+.gray-cls {
+  background-color: grey;
+}
